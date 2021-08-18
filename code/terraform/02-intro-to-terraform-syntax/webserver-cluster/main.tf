@@ -1,16 +1,13 @@
 terraform {
-  required_version = ">= 0.12, < 0.13"
+  required_version = ">= 1.0.5, < 2.0.0"
 }
 
 provider "aws" {
-  region = "us-east-2"
-
-  # Allow any 2.x version of the AWS provider
-  version = "~> 2.0"
+  region = "eu-central-1"
 }
 
 resource "aws_launch_configuration" "example" {
-  image_id        = "ami-0c55b159cbfafe1f0"
+  image_id        = "ami-08046b3f92ed2f520"
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.instance.id]
 

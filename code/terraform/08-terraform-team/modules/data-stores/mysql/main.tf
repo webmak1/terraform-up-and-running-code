@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "eu-central-1"
 
   # Allow any 2.x version of the AWS provider
   version = "~> 2.0"
@@ -7,7 +7,7 @@ provider "aws" {
 
 terraform {
   # Require any 0.12.x version of Terraform
-  required_version = ">= 0.12, < 0.13"
+  required_version = ">= 1.0.5, < 2.0.0"
 
   # Partial configuration. The rest will be filled in by Terragrunt.
   backend "s3" {}

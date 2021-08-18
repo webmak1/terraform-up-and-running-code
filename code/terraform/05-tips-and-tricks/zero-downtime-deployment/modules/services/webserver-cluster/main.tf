@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.12, < 0.13"
+  required_version = ">= 1.0.5, < 2.0.0"
 }
 
 resource "aws_launch_configuration" "example" {
@@ -202,7 +202,7 @@ data "terraform_remote_state" "db" {
   config = {
     bucket = var.db_remote_state_bucket
     key    = var.db_remote_state_key
-    region = "us-east-2"
+    region = "eu-central-1"
   }
 }
 

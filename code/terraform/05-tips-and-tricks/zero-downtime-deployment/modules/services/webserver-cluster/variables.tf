@@ -45,7 +45,7 @@ variable "enable_autoscaling" {
 
 variable "ami" {
   description = "The AMI to run in the cluster"
-  default     = "ami-0c55b159cbfafe1f0"
+  default     = "ami-08046b3f92ed2f520"
   type        = string
 }
 
